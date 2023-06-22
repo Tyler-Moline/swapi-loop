@@ -16,7 +16,7 @@ fetchData();
 const parentElement = document.body;
 
 function attachToDom() {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < info.length; i++) {
     const newP = document.createElement("p");
     newP.textContent = `${info[i].name}`;
     parentElement.appendChild(newP);
